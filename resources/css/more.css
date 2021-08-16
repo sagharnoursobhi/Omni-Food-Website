@@ -3,6 +3,9 @@
         padding: 0;
         box-sizing: border-box;
     }
+    ul{
+        list-style: none;
+    }
 
     html{
         background-color: #fff;
@@ -58,6 +61,10 @@
         transition: 0.6s;
     }
 
+    .hero-section{
+        padding: 9.6rem 0 4.2rem 0;
+    }
+
     .hero-container{
         display: grid;
         max-width: 1300px;
@@ -70,7 +77,12 @@
         font-size: 48px;
         margin-bottom: 51px;
     }
-
+    .hero-list li{
+        display: inline-block;
+    }
+    .hero-list{
+        display: inline-block;
+    }
     .delivered-meals{
         display: flex;
         margin-top: 84px;
@@ -103,6 +115,8 @@
     }
     header{
         background:#fdf2e9;
+        height: 96px;
+        padding: 0 4.9rem;
     }
     nav{
         display: flex;
@@ -134,10 +148,78 @@
         height: 64px;
         margin-top: 15px;
         max-width: 900px;
-        margin: 0 auto;
     }
 
     @media only screen and (max-width:870px){
-        
+        nav{
+            justify-content: space-between;
+        }
+        .menu-trigger{
+            background: url('../imgs/logos/burgerMenu.png') no-repeat center / cover!important;
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            width: 55px;
+            height: 42px;
+            z-index: 10;
+        }
+        .main-overlay{
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            display: none;
+        }
+        .main-overlay::after{
+            background: url('../imgs/logos/closeBtn.png') no-repeat center / cover;
+            content:"";
+            width: 49px;
+            height: 49px;
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            display: block;
+            filter: none;
+        }
+        nav li a:hover , nav li a:active{
+            border-bottom: none!important;
+            transition: none!important;
+        }
+        .menu{
+            display: block;
+            position: fixed;
+            width: 380px;
+            height: 450px;
+            background-color: white;
+            top:0!important;
+            right:0!important;
+            bottom: 0!important;
+            transform:translate3d(1000% , 0 , 0);
+        }
+        .menu li{
+            display: block!important;
+        }
+        body.menu-is-active .menu{
+            transition: 0.6s;
+            top: 50%;
+            right: 25%;
+            transform: translate3d(0 , 0 , 0);
+            z-index: 20;
+        }
+
+        body.menu-is-active .main-overlay{
+            z-index: 10;
+            display: block;
+        }
+        body.menu-is-active .main-overlay::after{
+            z-index: 20;
+        }
+        body.menu-is-active .menu-trigger{
+            display: none;
+        }
+        /* body.menu-is-active > *:not(.main-overlay):not(.menu){
+            filter: blur(5px);
+        } */
     }
 
