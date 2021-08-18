@@ -9,6 +9,8 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="resources/css/more.css">
+        <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
     </head>
     <body>
         <div class="main-overlay main-overlay-js"></div>
@@ -102,7 +104,49 @@
                 </div>
             </div>
         </section>
-
+        <section class="meals">
+            <div class="meals-title container">
+                <span class="sub-heading">MEALS</span>
+                <h2 class="heading-secondary">One thousand flavors in one place</h2>
+            </div>
+            <div class="meals-grid container grid grid--3-cols"><!---->
+                <div class="meal">
+                    <img class="meal-img" src="resources/imgs/persian-food/kuku.jpeg" alt="kookoo">
+                    <div class="meal-content">
+                        <div class="meal-tag"><span class="meal-sub-title tag--vegetarian">vegetarian</span></div>
+                        <p class="meal-title">Kookoo Sabzi</p>
+                        <ul class="meal-attributes">
+                            <li class="meal-attribute"><ion-icon class="meal-icon" name="flame"></ion-icon><span><strong>650</strong> calories</span></li>
+                            <li class="meal-attribute"><ion-icon class="meal-icon" name="restaurant"></ion-icon><span>NutriScore &reg; <strong>74</strong></span></li>
+                            <li class="meal-attribute"><ion-icon class="meal-icon" name="star"></ion-icon><span><strong>4.9</strong> rating (537)</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="meal">
+                    <img class="meal-img" src="resources/imgs/persian-food/salad.jpeg" alt="salad">
+                    <div class="meal-content"><!--to add padding on only content part-->
+                        <div class="meal-tag"><span class="meal-sub-title tag--vegan">vegan</span><span class="meal-sub-title tag--paleo">paleo</span></div>
+                        <p class="meal-title">salad shirazi</p>
+                        <ul class="meal-attributes">
+                            <li class="meal-attribute"><ion-icon class="meal-icon" name="flame"></ion-icon><span><strong>400</strong> calories</span></li>
+                            <li class="meal-attribute"><ion-icon class="meal-icon" name="restaurant"></ion-icon><span>NutriScore &reg; <strong>92</strong></span></li>
+                            <li class="meal-attribute"><ion-icon class="meal-icon" name="star"></ion-icon><span><strong>4.8</strong> rating (441)</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="meal-details">
+                    <p class="meal-detail-title">Delicious food made of:</p>
+                    <ul class="detail-attributes">
+                        <li class="meal-attribute"><ion-icon class="meal-icon" name="checkmark"></ion-icon> <span>Fresh vegetables</span></li>
+                        <li class="meal-attribute"><ion-icon class="meal-icon" name="checkmark"></ion-icon><span>Fresh fuits</span></li>
+                        <li class="meal-attribute"><ion-icon class="meal-icon" name="checkmark"></ion-icon><span>High quality red & white meat</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="meals-link">
+                <a href="#">See all recipes →</a>
+            </div>
+        </section>
         <script src="script.js"></script>
     </body>
     </html>

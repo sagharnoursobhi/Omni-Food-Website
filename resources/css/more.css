@@ -273,8 +273,84 @@
         letter-spacing: 0.5px;
         margin-bottom: 9rem;
     }
-   
 
+    /*meals-section*/
+    .meal{
+        border-radius: 20px;
+        overflow: hidden;/*to prevent to be overlaped of image with border radius*/
+        box-shadow:0 3rem 4.8rem rgb(0,0,0,0.075);
+    }
+    .meal:hover , .meal-details:hover{
+        transform: translateY(-20px);
+        transition: 0.5s;
+    }
+    .meal-content{
+        padding: 27px 15px 25px 45px;
+    }
+   
+    .meal-img{
+        width: 100%;
+    }
+
+    .meal-tag{
+        margin-bottom: 13px;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+    .meal-sub-title{
+        padding: 3px 14px;
+        font-size: 14px;
+        color: #333;
+        border-radius: 12px;
+        display: inline-block;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+    .tag--vegetarian{
+        background-color: rgb(15, 153, 15);
+    }
+    .tag--vegan{
+        background-color: rgb(68 212 68);
+    }
+    .tag--paleo{
+        background-color: #f1d40b;
+    }
+    .meal-title{
+        font-size: 19px;
+        margin-bottom: 10px;
+        color: #333;
+        font-weight: 600;
+    }
+    .meal-attributes{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .meal-attribute{
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        gap: 2px;
+    }
+    .meal-icon{
+        width: 40px;
+        height: 20px;
+        color: #b8651b;
+    }
+    .meal-details{
+        background: #e8c22b6b;
+        border-radius: 20px;
+        padding: 27px 19px 0;
+    }
+    .detail-attributes{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    .meal-detail-title{
+        margin-bottom: 20px;
+    }
 
     @media only screen and (max-width:870px){
         nav{
