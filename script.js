@@ -1,12 +1,12 @@
     let menuTrigger = document.querySelector('.menu-trigger-js');
-    let mainOverlay = document.querySelector('.main-overlay-js');
+    let menuPart = document.querySelector('.menu-js');
     let body = document.getElementsByTagName('BODY')[0];
 
     menuTrigger.addEventListener('click' , ()=>{
         body.classList.add('menu-is-active');
     })
 
-    mainOverlay.addEventListener('click' , ()=>{
+    menuPart.addEventListener('click' , ()=>{
         body.classList.remove('menu-is-active');
     })
 
