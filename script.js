@@ -42,3 +42,8 @@
     document.querySelector('.menu-link').addEventListener('click' , ()=>{
         body.classList.remove('menu-is-active');
     })
+
+
+    //custom smooth scrolling
+
+    
