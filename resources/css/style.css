@@ -30,20 +30,23 @@
     }
 
     .hero-text-box{
-        position: absolute;
-        width: 1140px;
+        position: fixed;
         top: 50%;
-        left: 50%;
+        left: 40%;
         transform:translate(-50%,-50%);
+    }
+    .hero-text-box .link{
+        display: flex;
+        align-items: center;
+        justify-content: start;
     }
 
     h1{
         margin-top: 0;
         margin-bottom: 20px;
         color: #fff;
-        font-size: 200%;
+        font-size: 50px;
         font-weight: 300;
-        text-transform: uppercase;
         word-spacing: 4px;
         letter-spacing: 1px;
     }
@@ -87,3 +90,88 @@
        border: 1px solid #b05d14;
        color: #fff; 
     }
+
+    @media only screen and (max-width: 787px){
+        header{
+            background-position-x: -131px;
+        }
+
+        h1{
+            font-size: 47px;
+        }
+
+        .btn{
+            padding: 9px 28px;
+            font-size: 19px;
+        }
+
+
+    }
+
+    @media only screen and (max-width: 787px){
+        .btn {
+            padding: 9px 22px!important;
+            font-size: 17px;
+        }
+        h1 {
+            font-size: 45px;
+        }
+        header{
+            background-position-y: 1px;
+            background-size: 56rem;
+        }
+    }
+
+    @media only screen and (max-width: 768px){
+        header{
+            background-size: 78rem;
+            background-position-y: 0px;
+        }
+    }
+
+    @media only screen and (max-width: 414px){
+        h1 {
+            font-size: 34px!important;
+        }
+       .btn{
+        padding: 7px 17px!important;
+        font-size: 13px;
+       }
+       header {
+        background-position-x: -161px;
+        background-size: 62rem;
+        background-position-y: 0px;
+       }
+    }
+
+    @media only screen and (max-width: 375px){
+        .btn {
+            padding: 7px 12px!important;
+        }
+        h1 {
+            font-size: 29px!important;
+        }
+    }
+
+    @media only screen and (max-width: 360px){
+        .btn {
+            padding: 7px 9px!important;
+            font-size: 12px;
+        }
+        
+    }
+    @media only screen and (max-width: 280px){
+        header{
+            background-size: 49rem;
+            background-position-y: 1px;
+        }
+        .btn {
+            padding: 5px 6px!important;
+            font-size: 10px;
+        }
+        h1 {
+            font-size: 21px!important;
+        }
+    }
+
+    

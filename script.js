@@ -60,8 +60,14 @@ $(document).ready(function () {
     
 
    function responsiveMenu(){
+    document.addEventListener('click', (e) => {
+        const target = e.target;
+        if(target.classList.contains('menu-trigger-js')) {
+            body.classList.add('menu-is-active');
+        }
+    })
     menuTrigger.addEventListener('click' , ()=>{
-        body.classList.add('menu-is-active');
+        
     })
 
     menuPart.addEventListener('click' , ()=>{
